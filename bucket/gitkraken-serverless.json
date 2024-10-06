@@ -1,5 +1,5 @@
 {
-    "version": "10.3.0",
+    "version": "10.4.0",
     "description": "A Git client which helps you track and manage changes to your code.",
     "homepage": "https://www.gitkraken.com/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://release.gitkraken.com/windows-standalone/gitkraken-10.3.0-full.nupkg",
-            "hash": "sha1:6013b4bc1cc35dfc2c9c2a137af83735169a8a7a"
+            "url": "https://release.gitkraken.com/windows-standalone/gitkraken-10.4.0-full.nupkg",
+            "hash": "9776a29cea63467ab59eafd6e5e86b172d8fd894f0490c740df579da22003777"
         }
     },
     "extract_dir": "lib\\net45",
