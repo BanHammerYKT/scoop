@@ -1,0 +1,45 @@
+{
+    "version": "24.7.6.972",
+    "description": "The web browser from Yandex. Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.",
+    "homepage": "https://browser.yandex.com/",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://download.cdn.yandex.net/browser/update/24_7_6_974_65143_w_s_r/yandex.exe",
+            "hash": "5aa2041509f16d060931cd55e115cf49554a5662782a6719f24f472b3ab079df"
+        }
+    },
+    "installer": {
+        "script": [
+            "Expand-7zipArchive \"$dir\\yandex.exe\" -Removal",
+            "Expand-7zipArchive \"$dir\\browser.7z\" -ExtractDir 'Browser-bin' -Removal"
+        ]
+    },
+    "bin": [
+        [
+            "browser.exe",
+            "yandex",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "shortcuts": [
+        [
+            "browser.exe",
+            "Yandex Browser",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "persist": "User Data",
+    "checkver": {
+        "url": "https://api.browser.yandex.ru/update-info/browser/yandex/win-yandex.rss?version=24.7.6.974",
+        "regex": "<guid64>.*update/(?<build64>.+?)/.*</guid64>[\\s\\S]+<version:version>(?<version>.+?)</version:version>",
+        "replace": "${version}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.cdn.yandex.net/browser/update/$matchBuild64/yandex.exe"
+            }
+        }
+    }
+}
