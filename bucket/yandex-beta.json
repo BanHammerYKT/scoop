@@ -11,7 +11,7 @@
     },
     "installer": {
         "script": [
-            "Expand-7zipArchive \"$dir\\alpha-yandex.exe\" -Removal",
+            "Expand-7zipArchive \"$dir\\beta-custo-int.exe\" -Removal",
             "Expand-7zipArchive \"$dir\\browser.7z\" -ExtractDir 'Browser-bin' -Removal"
         ]
     },
@@ -31,14 +31,14 @@
     ],
     "persist": "User Data",
     "checkver": {
-        "url": "https://api.browser.yandex.ru/update-info/browser/yandex-beta/win-yandex.rss?partner=alpha-yandex&version=0.0.0.0",
-        "regex": "<guid64>.*update\/(?<build64>.+?)\/.*<\/guid64>[\\s\\S]+<version:version>(?<version>.+?)<\/version:version>",
+        "url": "https://api.browser.yandex.com/update-info/browser/int-beta/win-int.rss?version=0.0.0.0",
+        "regex": "<guid64>.*update/(?<build64>.+?)/.*</guid64>[\\s\\S]+<version:version>(?<version>.+?)</version:version>",
         "replace": "${version}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.cdn.yandex.net/browser/update/$matchBuild64/alpha-yandex.exe"
+                "url": "https://download.cdn.yandex.net/browser/update/$matchBuild64/beta-custo-int.exe"
             }
         }
     }
