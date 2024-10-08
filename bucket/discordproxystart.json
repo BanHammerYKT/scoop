@@ -17,6 +17,9 @@
             "DiscordProxyStart"
         ]
     ],
+    "persist": [
+        "Config.ini"
+    ],
     "checkver": {
         "github": "https://github.com/aiqinxuancai/DiscordProxyStart"
     },
