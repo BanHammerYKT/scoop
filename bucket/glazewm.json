@@ -1,0 +1,30 @@
+{
+    "version": "3.3.0",
+    "description": "A tiling window manager for Windows inspired by i3 and Polybar.",
+    "homepage": "https://github.com/glzr-io/glazewm",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/glzr-io/glazewm/releases/download/v3.3.0/standalone-glazewm-v3.3.0-x64.msi#/glazewm.msi",
+            "hash": "980af8aaad3136efb301a682c5e87e8577386ed9464305e38a103e743f4ff5c8"
+        }
+    },
+    "extract_dir": "PFiles64\\glzr.io\\GlazeWM",
+    "post_install": [
+        "Remove-Item $dir\\cli -Force -Recurse"
+    ],
+    "shortcuts": [
+        [
+            "GlazeWM.exe",
+            "GlazeWM"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/glzr-io/glazewm/releases/download/v$version/standalone-glazewm-v$version-x64.msi"
+            }
+        }
+    }
+}
