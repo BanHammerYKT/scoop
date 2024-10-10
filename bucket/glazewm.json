@@ -17,6 +17,9 @@
             "GlazeWM"
         ]
     ],
+    "depends": [
+        "extras/zebar"
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
