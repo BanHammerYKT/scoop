@@ -1,13 +1,13 @@
 {
-    "version": "4.4.2",
+    "version": "4.4.3",
     "description": "UltraUXThemePatcher modifies your system files so that 3. party themes can be used.",
     "homepage": "https://mhoefs.eu/software_uxtheme.php?lang=en",
     "license": "Unknown",
-    "url": "https://mhoefs.eu/software_count.php?id=Uxtheme#/UltraUXThemePatcher_4.4.2.exe",
-    "hash": "f4c17504abefb71eb0c21d022a9dfb11e6a7ce58e0f281ce0138de76d570b9dc",
+    "url": "https://mhoefs.eu/software_count.php?id=Uxtheme#/UltraUXThemePatcher_4.4.3.exe",
+    "hash": "431675fcbb448567fafc83fee2b93c620ab7a7f5d3d7a7c7b922fec52d58deb2",
     "shortcuts": [
         [
-            "UltraUXThemePatcher_4.4.2.exe",
+            "UltraUXThemePatcher_4.4.3.exe",
             "UltraUXThemePatcher"
         ]
     ],
