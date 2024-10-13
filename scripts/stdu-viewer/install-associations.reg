@@ -1,0 +1,158 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.AZW\DefaultIcon]
+@="$stdu,18"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.AZW\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.CBR\DefaultIcon]
+@="$stdu,9"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.CBR\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.CBZ\DefaultIcon]
+@="$stdu,10"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.CBZ\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.DCX\DefaultIcon]
+@="$stdu,13"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.DCX\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.DJVU\DefaultIcon]
+@="$stdu,4"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.DJVU\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.EPUB\DefaultIcon]
+@="$stdu,19"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.EPUB\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.FB2\DefaultIcon]
+@="$stdu,12"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.FB2\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.JBIG2\DefaultIcon]
+@="$stdu,11"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.JBIG2\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.MOBI\DefaultIcon]
+@="$stdu,17"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.MOBI\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.PDB\DefaultIcon]
+@="$stdu,15"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.PDB\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.PDF\DefaultIcon]
+@="$stdu,3"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.PDF\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.TCR\DefaultIcon]
+@="$stdu,8"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.TCR\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.TIFF\DefaultIcon]
+@="$stdu,5"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.TIFF\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.TXT\DefaultIcon]
+@="$stdu,7"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.TXT\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.WWF\DefaultIcon]
+@="$stdu,14"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.WWF\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.XPS\DefaultIcon]
+@="$stdu,6"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile.XPS\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile\DefaultIcon]
+@="$stdu,1"
+
+[HKEY_CURRENT_USER\Software\Classes\STDUViewerFile\shell\open\command]
+@="\"$stdu\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.azw]
+@="STDUViewerFile.AZW"
+
+[HKEY_CURRENT_USER\Software\Classes\.cbr]
+@="STDUViewerFile.CBR"
+
+[HKEY_CURRENT_USER\Software\Classes\.cbz]
+@="STDUViewerFile.CBZ"
+
+[HKEY_CURRENT_USER\Software\Classes\.dcx]
+@="STDUViewerFile.DCX"
+
+[HKEY_CURRENT_USER\Software\Classes\.djv]
+@="STDUViewerFile.DJVU"
+
+[HKEY_CURRENT_USER\Software\Classes\.djvu]
+@="STDUViewerFile.DJVU"
+
+[HKEY_CURRENT_USER\Software\Classes\.epub]
+@="STDUViewerFile.EPUB"
+
+[HKEY_CURRENT_USER\Software\Classes\.fb2]
+@="STDUViewerFile.FB2"
+
+[HKEY_CURRENT_USER\Software\Classes\.fb2.zip]
+@="STDUViewerFile.FB2"
+
+[HKEY_CURRENT_USER\Software\Classes\.jb2]
+@="STDUViewerFile.JBIG2"
+
+[HKEY_CURRENT_USER\Software\Classes\.jbig2]
+@="STDUViewerFile.JBIG2"
+
+[HKEY_CURRENT_USER\Software\Classes\.mobi]
+@="STDUViewerFile.MOBI"
+
+[HKEY_CURRENT_USER\Software\Classes\.pcx]
+@="STDUViewerFile.DCX"
+
+[HKEY_CURRENT_USER\Software\Classes\.pdb]
+@="STDUViewerFile.PDB"
+
+[HKEY_CURRENT_USER\Software\Classes\.pdf]
+@="STDUViewerFile.PDF"
+
+[HKEY_CURRENT_USER\Software\Classes\.tcr]
+@="STDUViewerFile.TCR"
+
+[HKEY_CURRENT_USER\Software\Classes\.wwf]
+@="STDUViewerFile.WWF"
+
+[HKEY_CURRENT_USER\Software\Classes\.xps]
+@="STDUViewerFile.XPS"

@@ -1,0 +1,48 @@
+{
+    "homepage": "https://www.stdutility.com/stduviewer.html",
+    "version": "1.6.361",
+    "license": "freeware",
+    "url": "http://www.stdutility.com/download/stduviewer.zip",
+    "hash": "d704872fa52a8e1d9cccd771cd690815dec54339ba5788c67f2a552c48c56158",
+    "notes": [
+        "For associate files with STDU Viewer, run:",
+        "'reg import \"$dir\\install-associations.reg\"'"
+    ],
+    "pre_install": [
+        "New-Item -Path \"$dir\\STDUViewerSetting.xml\" -ItemType File -ErrorAction Ignore | Out-Null",
+        "New-Item -Path \"$dir\\STDUSessions.xml\" -ItemType File -ErrorAction Ignore | Out-Null",
+        "New-Item -Path \"$dir\\Highlight.xml\" -ItemType File -ErrorAction Ignore | Out-Null",
+        "New-Item -Path \"$dir\\Bookmark.xml\" -ItemType File -ErrorAction Ignore | Out-Null",
+        "New-Item -Path \"$dir\\FilesViewerState.xml\" -ItemType File -ErrorAction Ignore | Out-Null"
+    ],
+    "persist": [
+        "STDUViewerSetting.xml",
+        "STDUSessions.xml",
+        "Highlight.xml",
+        "Bookmark.xml",
+        "FilesViewerState.xml"
+    ],
+    "post_install": [
+        "$exepath = \"$dir\\STDUViewerApp.exe\".Replace('\\', '\\\\')",
+        "'install-associations', 'uninstall-associations', 'install-context', 'uninstall-context' | ForEach-Object {",
+        "  if (Test-Path \"$bucketsdir\\banhammer\\scripts\\stdu-viewer\\$_.reg\") {",
+        "    $content = Get-Content \"$bucketsdir\\banhammer\\scripts\\stdu-viewer\\$_.reg\"",
+        "    $content = $content.Replace('$stdu', $exepath)",
+        "    $content | Set-Content -Path \"$dir\\$_.reg\"",
+        "  }",
+        "}"
+    ],
+    "shortcuts": [
+        [
+            "STDUViewerApp.exe",
+            "STDU Viewer"
+        ]
+    ],
+    "checkver": {
+        "url": "http://www.stdutility.com/stduviewer.html",
+        "regex": "ver\\. ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "http://www.stdutility.com/download/stduviewer.zip"
+    }
+}
