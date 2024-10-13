@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.stdutility.com/stduviewer.html",
-    "version": "1.6.361",
+    "version": "1.6.375",
     "license": "freeware",
     "url": "http://www.stdutility.com/download/stduviewer.zip",
-    "hash": "d704872fa52a8e1d9cccd771cd690815dec54339ba5788c67f2a552c48c56158",
+    "hash": "09257ef97669847cd5a2f793ffdd931aee9fc4930bc5e0780ed592d754a121ae",
     "notes": [
         "For associate files with STDU Viewer, run:",
         "'reg import \"$dir\\install-associations.reg\"'"
