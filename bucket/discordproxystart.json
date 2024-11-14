@@ -1,12 +1,12 @@
 {
-    "version": "0.0.13",
+    "version": "0.0.14",
     "description": "Utility that provides proxy for Discord via discord-proxy project.",
     "homepage": "https://github.com/aiqinxuancai/DiscordProxyStart",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/aiqinxuancai/DiscordProxyStart/releases/download/v0.0.13/DiscordProxyStart-win-amd64.zip",
-            "hash": "aa6e1aeb3a2b632f547297fb8d5c3e89b1ca28e77320c945ed19ff03b6870354",
+            "url": "https://github.com/aiqinxuancai/DiscordProxyStart/releases/download/v0.0.14/DiscordProxyStart-win-amd64.zip",
+            "hash": "03561b0647f67cd8f75a5a64231f51811a05abcd8d126585d30e40e562134347",
             "extract_dir": "build"
         }
     },
@@ -17,9 +17,7 @@
             "DiscordProxyStart"
         ]
     ],
-    "persist": [
-        "Config.ini"
-    ],
+    "persist": "Config.ini",
     "checkver": {
         "github": "https://github.com/aiqinxuancai/DiscordProxyStart"
     },
