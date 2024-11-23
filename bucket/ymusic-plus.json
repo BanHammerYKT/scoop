@@ -1,12 +1,12 @@
 {
-    "version": "5.27.1",
+    "version": "5.29.3",
     "description": "Personal recommendations, selections for any occasion, podcasts about everything in the world and new music - with Yandex Music there is always something to listen to!",
     "homepage": "https://music.yandex.ru/download/",
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/slavrom21/YMReleases/releases/download/5.27.1/YMusic_5.27.1.7z",
-            "hash": "e905feac796bd1a820a5e261f62fdb7c08cce3ce831f2be2c26de2d3622302aa"
+            "url": "https://github.com/slavrom21/YMReleases/releases/download/5.29.3/YMusic_5.29.3.7z",
+            "hash": "6bfa53a62c661f054d720c3b1f0c891041f6be9db7de12a7a2ccb10d23743dca"
         }
     },
     "extract_dir": "YandexMusic",
