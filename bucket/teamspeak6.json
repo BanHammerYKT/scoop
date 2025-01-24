@@ -1,0 +1,34 @@
+{
+    "version": "6.0.0-beta2",
+    "description": "An out-of-this-world VoIP solution. A mission-critical voice communication solution",
+    "homepage": "https://www.teamspeak.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.teamspeak.com/en/features/licensing/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://files.teamspeak-services.com/pre_releases/client/6.0.0-beta2/teamspeak-client.msi",
+            "hash": "2ab2fc6ea39d8525577537a1e1c8b05d60c2fa273b8b93b7c1b1c0b14a6f1ab0",
+            "shortcuts": [
+                [
+                    "TeamSpeak.exe",
+                    "TeamSpeak 6"
+                ]
+            ]
+        }
+    },
+    "extract_dir": "TeamSpeak",
+    "checkver": {
+        "url": "https://www.teamspeak.com/ru/downloads",
+        "regex": "href=\"https://files.teamspeak-services.com/(?<type>.+?)/client/(6..+?)/teamspeak-client.msi\"",
+        "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://files.teamspeak-services.com/$matchType/client/$version/teamspeak-client.msi"
+            }
+        }
+    }
+}
