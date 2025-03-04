@@ -1,0 +1,54 @@
+{
+    "version": "1.0.0",
+    "homepage": "https://github.com/Special-Niewbie/BTBatteryWatch",
+    "description": "BTBatteryWatch is a lightweight program for monitoring the battery level of Bluetooth devices on your Windows computer.",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/Special-Niewbie/BTBatteryWatch/releases/download/v1.0.0/BTBatteryWatchsetup.exe",
+    "hash": "4e22e83aefb5ca2bad373bc9e7669c93273a668c5e8819d3b93ded9555496038",
+    "notes": [
+        "For autorun BT Battery Watch at startup, run:",
+        "'reg import \"$dir\\install-autorun.reg\"'"
+    ],
+    "depends": "innounp",
+    "pre_install": [
+        "'config.ini' | ForEach-Object {",
+        "    if (!(Test-Path \"$persist_dir\\$_\")) { Write-Output \"[Settings]\rDeviceName=dummy\" | Out-File -FilePath \"$dir\\$_\" | Out-Null}",
+        "}"
+    ],
+    "installer": {
+        "script": [
+            "innounp -x -d\"$dir\" \"$dir\\$fname\"",
+            "Move-Item \"$dir\\{app}\\*\" \"$dir\" -Force",
+            "Remove-Item \"$dir\\{app}\" -Recurse -Force",
+            "Move-Item \"$dir\\{localappdata}\\BTBatteryWatch\\*\" \"$dir\" -Force",
+            "Remove-Item \"$dir\\{localappdata}\" -Recurse -Force",
+            "Remove-Item \"$dir\\{tmp}\" -Recurse -Force",
+            "Remove-Item \"$dir\\BTBatteryWatchsetup.exe\" -Force"
+        ]
+    },
+    "bin": "BTBatteryWatch.exe",
+    "shortcuts": [
+        [
+            "BTBatteryWatch.exe",
+            "BT Battery Watch"
+        ]
+    ],
+    "persist": "config.ini",
+    "post_install": [
+        "$exepath = \"$dir\\BTBatteryWatch.exe\".Replace('\\', '\\\\')",
+        "'install-autorun', 'uninstall-autorun' | ForEach-Object {",
+        "  if (Test-Path \"$bucketsdir\\banhammer\\scripts\\btbatterywatch\\$_.reg\") {",
+        "    $content = Get-Content \"$bucketsdir\\banhammer\\scripts\\btbatterywatch\\$_.reg\"",
+        "    $content = $content.Replace('$btbatterywatch', $exepath)",
+        "    $content | Set-Content -Path \"$dir\\$_.reg\"",
+        "  }",
+        "}"
+    ],
+    "uninstaller": {
+        "script": "if ($cmd -eq 'uninstall') { reg import \"$dir\\uninstall-autorun.reg\" }"
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Special-Niewbie/BTBatteryWatch/releases/download/v$version/BTBatteryWatchsetup.exe"
+    }
+}
