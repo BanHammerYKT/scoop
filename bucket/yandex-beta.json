@@ -1,12 +1,12 @@
 {
-    "version": "25.2.4.948",
+    "version": "25.2.5.900",
     "description": "The web browser from Yandex. Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.",
     "homepage": "https://browser.yandex.com/",
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://download.cdn.yandex.net/browser/update/25_2_4_951_75122_w_b_r/beta-custo-int.exe",
-            "hash": "6daa73256c025a2da9c0f125fda1079fa3c1d84185ffabfea40818694d4c4243"
+            "url": "https://download.cdn.yandex.net/browser/update/25_2_5_901_75578_w_b_r/beta-custo-int.exe",
+            "hash": "ca7928868dbace04886e1d68f4930f5ddbd389a7fd9334ecfe2cc7ede30e11dd"
         }
     },
     "installer": {
