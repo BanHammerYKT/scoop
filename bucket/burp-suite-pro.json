@@ -1,0 +1,51 @@
+{
+    "version": "2025.3",
+    "homepage": "https://portswigger.net/burp",
+    "description": "An application that comes with set of tools used for penetration and security testing of web applications.",
+    "license": {
+        "identifier": "Shareware",
+        "url": "https://portswigger.net/legal"
+    },
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2025.3&type=WindowsX64#/BurpSuitePro.exe",
+                "https://gitlab.com/banhammerykt/patches/-/raw/master/burp-suite-pro.dat"
+            ],
+            "hash": [
+                "02a48e9a9f240a3bd76a174d14a2b392fad8f66bae8c11e0aeacbd702f3a01ba",
+                "a179b6362e8cd19b7d3995cb9af6105513ff6120348a803e9f67110e897d5418"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "BurpSuitePro.exe",
+            "Burp Suite Professional"
+        ]
+    ],
+    "post_install": [
+        "Start-Process \"$dir\\BurpSuitePro.exe\" -Wait -ArgumentList @('-q', '-dir', \"$dir\\temp\"); Remove-Item \"$dir\\BurpSuitePro.exe\"",
+        "Copy-Item \"$dir\\temp\\*\" \"$dir\" -Recurse -Force -ErrorAction SilentlyContinue",
+        "Start-Process \"$dir\\temp\\uninstall.exe\" -Wait -ArgumentList '-q'; Start-Sleep -Seconds 4",
+        "$hash = [System.BitConverter]::ToString([System.Security.Cryptography.HashAlgorithm]::Create(\"MD5\").ComputeHash([System.Text.Encoding]::UTF8.GetBytes($app))).Replace(\"-\", \"\").ToLower()",
+        "7z x -y -p\"$hash\" -o\"$dir\" \"$dir\\burp-suite-pro.dat\" | Out-Null",
+        "'.install4j', 'temp', 'uninstall.exe', 'burp-suite-pro.dat' | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse -Force -ErrorAction SilentlyContinue }",
+        "Remove-Item \"HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\7318-9294-3757-1226\" -Force -ErrorAction SilentlyContinue"
+    ],
+    "checkver": {
+        "url": "https://portswigger.net/burp/releases/data",
+        "jsonpath": "$.ResultSet.Results..version",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": [
+                    "https://portswigger-cdn.net/burp/releases/download?product=pro&version=$version&type=WindowsX64#/BurpSuitePro.exe",
+                    "https://gitlab.com/banhammerykt/patches/-/raw/master/burp-suite-pro.dat"
+                ]
+            }
+        }
+    }
+}
