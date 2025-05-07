@@ -1,10 +1,10 @@
 {
-    "version": "1.7.1",
+    "version": "1.8.0",
     "description": "Android ADB desktop app.",
     "homepage": "https://github.com/liriliri/aya",
     "license": "Unknown",
-    "url": "https://github.com/liriliri/aya/releases/download/v1.7.1/AYA-1.7.1-win-x64.exe#/setup.exe",
-    "hash": "af19b1f1c6c6c06671d25637f09ad4fead3cb2476154bbfad6ed04fc23165891",
+    "url": "https://github.com/liriliri/aya/releases/download/v1.8.0/AYA-1.8.0-win-x64.exe#/setup.exe",
+    "hash": "93e54c6d53280857b3fd1f99ba64c7f2982ecf6998947823bc4b3d1f24c631d5",
     "shortcuts": [
         [
             "AYA.exe",
