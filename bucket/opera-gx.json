@@ -18,7 +18,7 @@
     },
     "installer": {
         "script": [
-            "'*_list', 'opera_autoupdate*', 'installer*' | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse -Force -ErrorAction SilentlyContinue }",
+            "'*_list', 'opera_autoupdate*', 'installer*', 'opera_gx_splash*' | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse -Force -ErrorAction SilentlyContinue }",
             "Set-Content -Path \"$dir\\installer_prefs.json\" -Value (@{ 'autoupdate'= $false; 'enable_stats' = $false; 'single_profile' = $true } | ConvertTo-Json) -Encoding ASCII"
         ]
     },
