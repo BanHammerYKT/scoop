@@ -1,12 +1,12 @@
 {
-    "version": "2.4.1",
+    "version": "2.4.2",
     "description": "The Fully Customizable Desktop Environment for Windows 10/11.",
     "homepage": "https://github.com/eythaann/Seelen-UI",
     "license": "https://github.com/eythaann/Seelen-UI/blob/master/LICENSE",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/eythaann/Seelen-UI/releases/download/v2.4.1/Seelen.UI_2.4.1_x64-setup.exe#/dl.7z",
-            "hash": "1184aec92c17aa72fe04e0a0520f08222dfd382c8e7ab108c74eefc4cfa002f9"
+            "url": "https://github.com/eythaann/Seelen-UI/releases/download/v2.4.2/Seelen.UI_2.4.2_x64-setup.exe#/dl.7z",
+            "hash": "c7f193af1432823684c0036ca040c525296b0e52d097a63edf12f650a6d904a2"
         }
     },
     "pre_install": "'$PLUGINSDIR', 'Uninstall.exe' | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse -Force }",
