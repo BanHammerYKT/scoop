@@ -48,7 +48,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://release.gitkraken.com/windows-standalone/gitkraken-$version-full.nupkg"
+                "url": "https://api.gitkraken.dev/releases/production/windows/x64/$version/gitkraken-11.5.0-full.nupkg",
+                "hash": {
+                    "url": "https://release.gitkraken.com/windows/RELEASES?id=gitkraken&localVersion=0&arch=amd64",
+                    "regex": "(\\w+?)\\s"
+                }
             }
         }
     }
