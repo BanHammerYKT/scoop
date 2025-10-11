@@ -1,10 +1,10 @@
 {
-    "version": "1.0.0",
+    "version": "2.2.0",
     "homepage": "https://github.com/Special-Niewbie/BTBatteryWatch",
     "description": "BTBatteryWatch is a lightweight program for monitoring the battery level of Bluetooth devices on your Windows computer.",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/Special-Niewbie/BTBatteryWatch/releases/download/v1.0.0/BTBatteryWatchsetup.exe",
-    "hash": "4e22e83aefb5ca2bad373bc9e7669c93273a668c5e8819d3b93ded9555496038",
+    "url": "https://github.com/Special-Niewbie/BTBatteryWatch/releases/download/v2.2.0/BTBatteryWatchsetup_v2.2.0.exe",
+    "hash": "4b3aeb94cf84ecb8d4a56294fa61b056869ddd40a6e353e7b3ad16b20c3b794b",
     "notes": [
         "For autorun BT Battery Watch at startup, run:",
         "'reg import \"$dir\\install-autorun.reg\"'"
@@ -12,7 +12,7 @@
     "depends": "innounp",
     "pre_install": [
         "'config.ini' | ForEach-Object {",
-        "    if (!(Test-Path \"$persist_dir\\$_\")) { Write-Output \"[Settings]\rDeviceName=dummy\" | Out-File -FilePath \"$dir\\$_\" | Out-Null}",
+        "    if (!(Test-Path \"$persist_dir\\$_\")) { Write-Output \"[Settings]DeviceName=dummy\" | Out-File -FilePath \"$dir\\$_\" | Out-Null}",
         "}"
     ],
     "installer": {
