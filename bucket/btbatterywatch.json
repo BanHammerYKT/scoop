@@ -49,6 +49,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Special-Niewbie/BTBatteryWatch/releases/download/v$version/BTBatteryWatchsetup.exe"
+        "url": "https://github.com/Special-Niewbie/BTBatteryWatch/releases/download/v$version/BTBatteryWatchsetup_v$version.exe"
     }
 }
