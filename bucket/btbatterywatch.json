@@ -12,7 +12,7 @@
     "depends": "innounp",
     "pre_install": [
         "'config.ini' | ForEach-Object {",
-        "    if (!(Test-Path \"$persist_dir\\$_\")) { Write-Output \"[Settings]DeviceName=dummy\" | Out-File -FilePath \"$dir\\$_\" | Out-Null}",
+        "    if (!(Test-Path \"$persist_dir\\$_\")) { Write-Output \"[Settings]`r`nDeviceName=dummy\" | Out-File -FilePath \"$dir\\$_\" | Out-Null}",
         "}"
     ],
     "installer": {
