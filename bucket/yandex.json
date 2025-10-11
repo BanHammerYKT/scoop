@@ -31,8 +31,8 @@
     ],
     "persist": "User Data",
     "checkver": {
-        "url": "https://api.browser.yandex.ru/update-info/browser/yandex/win-yandex.rss?version=24.7.6.974",
-        "regex": "<guid64>.*update/(?<build64>.+?)/.*</guid64>[\\s\\S]+<version:version>(?<version>.+?)</version:version>",
+        "url": "https://api.browser.yandex.ru/update-info/browser/yandex/win-yandex.rss?version=$version",
+        "regex": "<guid.*?>.*update/(?<build64>.+?)/.*</guid.*?>[\\s\\S]+<version:version>(?<version>.+?)</version:version>",
         "replace": "${version}"
     },
     "autoupdate": {
