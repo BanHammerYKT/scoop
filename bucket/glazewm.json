@@ -10,11 +10,18 @@
         }
     },
     "extract_dir": "PFiles64\\glzr.io\\GlazeWM",
-    "post_install": "Remove-Item $dir\\cli -Force -Recurse",
+    "post_install": [
+        "Remove-Item $dir\\cli -Force -Recurse",
+        "scoop shim add glazewm $dir\\GlazeWM.exe '--' start --config=\"$env:USERPROFILE\\.config\\glazewm\\config.yaml\""
+    ],
+    "post_uninstall": [
+        "scoop shim rm glazewm"
+    ],
     "shortcuts": [
         [
             "GlazeWM.exe",
-            "GlazeWM"
+            "GlazeWM",
+            "start --config=\"%userprofile%\\.config\\glazewm\\config.yaml\""
         ]
     ],
     "depends": "extras/zebar",
