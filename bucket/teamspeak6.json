@@ -1,5 +1,5 @@
 {
-    "version": "6.0.0-beta3.3",
+    "version": "6.0.0-beta3.4",
     "description": "An out-of-this-world VoIP solution. A mission-critical voice communication solution",
     "homepage": "https://www.teamspeak.com/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://files.teamspeak-services.com/pre_releases/client/6.0.0-beta3.3/teamspeak-client.msi",
-            "hash": "7ae99cbc87a48baeb1dbf6ef0c84675d1b2e3bb9bd8fb867ce8907d6171dd000",
+            "url": "https://files.teamspeak-services.com/pre_releases/client/6.0.0-beta3.4/teamspeak-client.msi",
+            "hash": "adfe988a5a391e8d8822b4862a0a9fa39ec7df75c89e23938d1fbc6cc291ebc5",
             "shortcuts": [
                 [
                     "TeamSpeak.exe",
