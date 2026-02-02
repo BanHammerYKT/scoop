@@ -1,5 +1,5 @@
 {
-    "version": "2025.2.3.8",
+    "version": "2025.3.1.6",
     "description": "The official IDE for Android development, which includes everything you need to build Android apps.",
     "homepage": "https://developer.android.com/studio/preview",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2025.2.3.8/android-studio-2025.2.3.8-windows.zip",
-            "hash": "cf56f6067bacf805bfa79f799439312c6c8f120b10ab7c1b524090c11bacb361",
+            "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/2025.3.1.6/android-studio-panda1-rc1-windows.zip",
+            "hash": "dff816d2cc0af98cb62fba148494a96e6d75a8fc4ef4ef446561a55996a48991",
             "shortcuts": [
                 [
                     "bin\\studio64.exe",
@@ -24,12 +24,12 @@
     "pre_install": "'uninstall.exe' | ForEach-Object { Remove-Item \"$dir/$_\" -Recurse }",
     "extract_dir": "android-studio",
     "checkver": {
-        "regex": "agree_beta_win_bundle_download[\\s\\S]+?android-studio-([\\d.]+)-windows\\.exe"
+        "regex": "agree_beta_win_bundle_download[\\s\\S]+?(?<version>[\\d.]+)/(?<file>android-studio-.+-windows)\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/$version/android-studio-$version-windows.zip"
+                "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/$version/$matchFile.zip"
             }
         }
     }
