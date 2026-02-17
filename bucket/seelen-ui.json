@@ -9,7 +9,6 @@
             "hash": "4a66b922876e41dea6b4f5cad1dc164ce1e659c72306ce35ca4c7e85ecdf2e10"
         }
     },
-    "pre_install": "'$PLUGINSDIR', 'Uninstall.exe' | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse -Force }",
     "bin": "seelen-ui.exe",
     "shortcuts": [
         [
