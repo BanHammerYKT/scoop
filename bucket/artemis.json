@@ -1,0 +1,43 @@
+{
+    "version": "0.6.7",
+    "description": "GameStream client for PCs (Windows, Mac, Linux, and Steam Link)",
+    "homepage": "https://github.com/wjbeckett/artemis",
+    "license": "GPL-3.0-only",
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/wjbeckett/artemis/releases/download/0.6.7-dev.20250831.0017+afe2de7/artemis-windows-x64-portable-0.6.7-dev.20250831.0017+afe2de7.zip",
+            "hash": "ee931bebb6b9f073448e1777ec7ab465879b45d72c8069f91aeb2ac24feaab70"
+        },
+        "arm64": {
+            "url": "https://github.com/wjbeckett/artemis/releases/download/0.6.7-dev.20250831.0017+afe2de7/artemis-windows-arm64-portable-0.6.7-dev.20250831.0017+afe2de7.zip",
+            "hash": "dffc60066072421d91378e9e3920ce41f36b41453c407c2a8351ae1b2aca6f98"
+        }
+    },
+    "pre_install": "if (!(Test-Path \"$persist_dir$($cfg = '/Artemis Desktop Project')\")) { $null = New-Item -ItemType Directory \"$dir$cfg\" }",
+    "bin": "Artemis.exe",
+    "shortcuts": [
+        [
+            "Artemis.exe",
+            "Artemis"
+        ]
+    ],
+    "persist": "Artemis Desktop Project",
+    "checkver": {
+        "url": "https://api.github.com/repositories/1017979706/releases",
+        "jsonpath": "$.[0].tag_name",
+        "regex": "(?<version>[\\d.]+)-(?<build>.+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/wjbeckett/artemis/releases/download/$version-$matchBuild/artemis-windows-x64-portable-$version-$matchBuild.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/wjbeckett/artemis/releases/download/$version-$matchBuild/artemis-windows-arm64-portable-$version-$matchBuild.zip"
+            }
+        }
+    }
+}
