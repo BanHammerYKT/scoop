@@ -1,10 +1,10 @@
 {
-    "version": "2.2.0",
+    "version": "2.3.0",
     "homepage": "https://github.com/Special-Niewbie/BTBatteryWatch",
     "description": "BTBatteryWatch is a lightweight program for monitoring the battery level of Bluetooth devices on your Windows computer.",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/Special-Niewbie/BTBatteryWatch/releases/download/v2.2.0/BTBatteryWatchsetup_v2.2.0.exe",
-    "hash": "4b3aeb94cf84ecb8d4a56294fa61b056869ddd40a6e353e7b3ad16b20c3b794b",
+    "url": "https://github.com/Special-Niewbie/BTBatteryWatch/releases/download/v2.3.0/BTBatteryWatchsetup_v2.3.0.exe",
+    "hash": "98e9604c36d533240922ccb012714068c53346a15576be6c3651665a95d435c7",
     "notes": [
         "For autorun BT Battery Watch at startup, run:",
         "'reg import \"$dir\\install-autorun.reg\"'"
