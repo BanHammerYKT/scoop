@@ -1,5 +1,5 @@
 {
-    "version": "2025.3.3.4",
+    "version": "2025.3.4.1",
     "description": "The official IDE for Android development, which includes everything you need to build Android apps.",
     "homepage": "https://developer.android.com/studio/preview",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/2025.3.3.4/android-studio-panda3-canary4-windows.zip",
-            "hash": "237c657d891729cf436e0dd88833fa8af0c4a609c29ca0c487ae261b2317d725",
+            "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/2025.3.4.1/android-studio-panda4-canary1-windows.zip",
+            "hash": "a9a409e7dd3457802875d824d83565232051e492903a43bca11509162d66cc00",
             "shortcuts": [
                 [
                     "bin\\studio64.exe",
