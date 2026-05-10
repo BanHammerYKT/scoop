@@ -1,12 +1,12 @@
 {
-    "version": "1.48.0",
+    "version": "1.48.1",
     "description": "Terminal music player inspired by winamp.",
     "homepage": "https://github.com/bjarneo/cliamp",
     "license": "https://github.com/bjarneo/cliamp/blob/main/LICENSE",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bjarneo/cliamp/releases/download/v1.48.0/cliamp-windows-amd64.exe#/cliamp.exe",
-            "hash": "eb5b860469dfa24aecb4e54650a701ec64db5d9b8b451854cf44c8b47695ec17"
+            "url": "https://github.com/bjarneo/cliamp/releases/download/v1.48.1/cliamp-windows-amd64.exe#/cliamp.exe",
+            "hash": "5445de28db676106a4574eaf5e237fe452c717b85f679b6cef255e3a920615c2"
         }
     },
     "bin": "cliamp.exe",
