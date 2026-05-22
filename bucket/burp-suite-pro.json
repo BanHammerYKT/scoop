@@ -1,5 +1,5 @@
 {
-    "version": "2026.5.1",
+    "version": "2026.4.3",
     "homepage": "https://portswigger.net/burp",
     "description": "An application that comes with set of tools used for penetration and security testing of web applications.",
     "license": {
@@ -9,11 +9,11 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://portswigger.net/burp/releases/download?product=desktop&version=2026.5.1&type=WindowsX64#/BurpSuite.exe",
+                "https://portswigger.net/burp/releases/download?product=desktop&version=2026.4.3&type=WindowsX64#/BurpSuite.exe",
                 "https://gitlab.com/banhammerykt/patches/-/raw/master/burp-suite-pro.dat"
             ],
             "hash": [
-                "169eaaee9a8cd31cf8488f89a70d877de5ed16bd0b42099ce409fc2e55db3cf1",
+                "81da742afcfa00abf35327c71d57a6d7308fa7264d0250e787cc6652f9fbc92f",
                 "b791f6a474eb1263ad33621e2ca5ba5ccb37330f0f5db859f803670fd6919df8"
             ]
         }
@@ -35,7 +35,7 @@
     ],
     "checkver": {
         "url": "https://portswigger.net/burp/releases/data",
-        "jsonpath": "$.ResultSet.Results..version",
+        "jsonpath": "$.ResultSet.Results[?(@.buildCategory == 'desktop')].version",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
