@@ -1,5 +1,5 @@
 {
-    "version": "2026.1.1.6",
+    "version": "2026.1.1.7",
     "description": "The official IDE for Android development, which includes everything you need to build Android apps.",
     "homepage": "https://developer.android.com/studio/preview",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.1.1.6/android-studio-quail1-rc1-windows.zip",
-            "hash": "9621fb5e3307f6cc5eabbeb3378c16a9f9049e10607aaf86ee2e021d75b43bea",
+            "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.1.1.7/android-studio-quail1-rc2-windows.zip",
+            "hash": "bb116f9fe5e55bd1e62711d40ac7ea1004e544a50c571a6cc0cfd4a8a2ee0636",
             "shortcuts": [
                 [
                     "bin\\studio64.exe",
