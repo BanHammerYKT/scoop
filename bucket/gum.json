@@ -1,25 +1,23 @@
 {
-    "version": "0.17.0",
+    "version": "2.0.0",
     "description": "A tool for glamorous shell scripts",
     "homepage": "https://github.com/charmbracelet/gum",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/charmbracelet/gum/releases/download/v0.17.0/gum_0.17.0_Windows_x86_64.zip",
-            "extract_dir": "gum_0.17.0_Windows_x86_64",
-            "hash": "b2be80531c6babc8d4e0e6ca95773d58118a2e1582ae006aace08dbc55503072"
+            "url": "https://github.com/charmbracelet/gum/releases/download/v2.0.0/gum_2.0.0_Windows_x86_64.zip",
+            "extract_dir": "gum_2.0.0_Windows_x86_64",
+            "hash": "eb78a29bf9bb365016c85a285ba8387611e8fe10e50c8e8358537bfa2eabf4f8"
         },
         "32bit": {
-            "url": "https://github.com/charmbracelet/gum/releases/download/v0.17.0/gum_0.17.0_Windows_i386.zip",
-            "extract_dir": "gum_0.17.0_Windows_i386",
-            "hash": "077ee612b093be58021900c93f61df3eb53a4d830553dcbe5667799072e6c69e"
+            "url": "https://github.com/charmbracelet/gum/releases/download/v2.0.0/gum_2.0.0_Windows_i386.zip",
+            "extract_dir": "gum_2.0.0_Windows_i386",
+            "hash": "aecebce796bb382a7af83c0187e581e8e2827951ee272733403182d9576e5b00"
         }
     },
     "bin": "gum.exe",
     "installer": {
-        "script": [
-            "'completions', 'manpages' | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse -Force -ErrorAction SilentlyContinue }"
-        ]
+        "script": "'completions', 'manpages' | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse -Force -ErrorAction SilentlyContinue }"
     },
     "checkver": "github",
     "autoupdate": {
