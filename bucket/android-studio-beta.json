@@ -1,5 +1,5 @@
 {
-    "version": "2026.2.1.7",
+    "version": "2026.2.2.6",
     "description": "The official IDE for Android development, which includes everything you need to build Android apps.",
     "homepage": "https://developer.android.com/studio/preview",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.2.1.7/android-studio-rabbit1-rc2-windows.zip",
-            "hash": "27b4cd1eb8aded87a5fd74c72b7a95314ce4b2d4891ced7329e3e52643e3a33f",
+            "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.2.2.6/android-studio-rabbit2-rc1-windows.zip",
+            "hash": "a11381873d0453c052db1746c093ba071413c869a9c6feae6ec7791747c5b238",
             "shortcuts": [
                 [
                     "bin\\studio64.exe",
