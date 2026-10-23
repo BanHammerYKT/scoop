@@ -1,12 +1,12 @@
 {
-    "version": "1.27.0",
+    "version": "1.28.1",
     "description": "TMPlayer is a free, open source, unofficial Telegram media player that plays the videos in your own Telegram chats on Android TV, Fire TV, Android phones, Windows, macOS and Linux, while they are still downloading.",
     "homepage": "https://github.com/dracu-lah/TMPlayer",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dracu-lah/TMPlayer/releases/download/v1.27.0/TMPlayer-1.27.0-windows-x64.msi",
-            "hash": "746590b92d1d5f2e3a4bb80a9c88a4a19be5a2ae1b119dffb128512fe88e617e",
+            "url": "https://github.com/dracu-lah/TMPlayer/releases/download/v1.28.1/TMPlayer-1.28.1-windows-x64.msi",
+            "hash": "3c2fce2cf41d8f8eea47695ddcba967210681c4db005bb5d5dfca288005d10d1",
             "shortcuts": [
                 [
                     "TMPlayer.exe",
