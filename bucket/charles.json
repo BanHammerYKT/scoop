@@ -1,12 +1,12 @@
 {
-    "version": "5.2.2",
+    "version": "5.2.3",
     "description": "Charles is an HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL / HTTPS traffic between their machine and the Internet.",
     "homepage": "https://www.charlesproxy.com/",
     "license": "Shareware",
     "architecture": {
         "64bit": {
-            "url": "https://www.charlesproxy.com/assets/release/5.2.2/charles-proxy-5.2.2-win-x86_64.appx#/dl.7z",
-            "hash": "c2ca1952e8a930f2c88ec45c6c1fbecf250b590884928f4553d48684d56f7048"
+            "url": "https://www.charlesproxy.com/assets/release/5.2.3/charles-proxy-5.2.3-win-x86_64.appx#/dl.7z",
+            "hash": "89ed75b878c5d5da3229bf50995e10c4ce93435c60f9cdc9f87167fc6a2a399d"
         }
     },
     "extract_dir": "VFS\\ProgramFilesX64\\Charles",
