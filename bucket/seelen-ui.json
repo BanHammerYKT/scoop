@@ -1,12 +1,12 @@
 {
-    "version": "2.8.10",
+    "version": "2.8.11",
     "description": "The Fully Customizable Desktop Environment for Windows 10/11.",
     "homepage": "https://github.com/eythaann/Seelen-UI",
     "license": "https://github.com/eythaann/Seelen-UI/blob/master/LICENSE",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/eythaann/Seelen-UI/releases/download/v2.8.10/Seelen.UI_2.8.10_x64-setup.exe#/dl.7z",
-            "hash": "227f8740c106a27056f06c488ec69816593503629b39051e63227a9b196b0511"
+            "url": "https://github.com/eythaann/Seelen-UI/releases/download/v2.8.11/Seelen.UI_2.8.11_x64-setup.exe#/dl.7z",
+            "hash": "d580a2a023c39e5801d4391a695c99e1e87a2d6299c7938e55e77c4d2766e5f9"
         }
     },
     "bin": "seelen-ui.exe",
